@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Get the username
+username=$(whoami)
+
+# Get the home directory path
+home_dir=$(awk -F: -v v="^$username:" '{if ($0 ~ v) print $6}' /etc/passwd)
+
+# Change the working directory to the home directory
+cd "$home_dir"
+
+pwd
