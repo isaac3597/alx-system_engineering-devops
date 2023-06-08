@@ -1,1 +1,1 @@
-echo -e '0 string SCHOOL School data\n!:mime School' > school.mgc 
+printf "%s\n%s\n" '0 string SCHOOL School' '!:mime  School' > school.mgc
