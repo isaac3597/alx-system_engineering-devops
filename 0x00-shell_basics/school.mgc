@@ -1,1 +1,1 @@
-0 search File containing "SCHOOL"
+echo -e '0 string SCHOOL School data\n!:mime School' > school.mgc 
